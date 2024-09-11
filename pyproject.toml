@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "medical-research-data-extractor"
+version = "0.1.0"
+description = ""
+authors = ["Ricardo <raib1997@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+pdfquery = "^0.4.3"
+pandas = "^2.2.2"
+pydf = "^12"
+pythonnet = "^3.0.3"
+ironpdf = "^2024.8.1.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
