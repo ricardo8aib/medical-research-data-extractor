@@ -164,3 +164,4 @@ cython_debug/
 
 # Ignore ALL PDFs
 *.pdf
+*.DS_Store
