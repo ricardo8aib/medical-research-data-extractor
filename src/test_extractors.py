@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from utils.summary_report.summary_extractor import SummaryReportExtractor
 from utils.detailed_report.detailed_extractor import DetailedReportExtractor
-import fitz  # PyMuPDF
+import fitz
 
 # Define the path to the PDF file
 pdf_path = "src/medical_docs/sample1.pdf"
@@ -13,7 +13,7 @@ pdf_document = fitz.open(pdf_path)
 text = ""
 for page_number in range(pdf_document.page_count):
     page = pdf_document.load_page(page_number)
-    text += page.get_text("text")  # Extracts the text from the page
+    text += page.get_text("text")
 
 
 # Close the PDF file
