@@ -36,7 +36,7 @@ class DetailedReportExtractor:
                     }
                 )
 
-            detailed_report_df = pd.DataFrame(detailed_report_data)
+            detailed_report_df = pd.DataFrame(detailed_report_data).iloc[1:].reset_index(drop=True)
 
         else:
             detailed_report_df = None

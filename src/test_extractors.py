@@ -4,7 +4,7 @@ from utils.detailed_report.detailed_extractor import DetailedReportExtractor
 import fitz
 
 # Define the path to the PDF file
-pdf_path = "src/medical_docs/sample1.pdf"
+pdf_path = "src/docs/sample2.pdf"
 
 # Open the PDF file
 pdf_document = fitz.open(pdf_path)
@@ -25,5 +25,5 @@ summary_extractor.generate_dataframe()
 detailed_extractor.generate_dataframe()
 # extractor.convert_column_types()
 
-print(summary_extractor.summary_report_df)
+# print(summary_extractor.summary_report_df)
 print(detailed_extractor.detailed_report_df)

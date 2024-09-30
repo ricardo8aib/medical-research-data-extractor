@@ -1,7 +1,7 @@
 import fitz
 
 # Define the path to the PDF file
-pdf_path = "src/medical_docs/med_sample_2.pdf"
+pdf_path = "src/docs/med_sample_2.pdf"
 
 # Open the PDF file
 pdf_document = fitz.open(pdf_path)
